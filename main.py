@@ -23,8 +23,15 @@ class FilaPreferencial(Fila):
         """Si maxenfila es menor que la cantidad de clientes actualmente en espera, abro nueva caja"""
         
         if self.enfila>maxenfila:
+		
+		#x=self.fila.pop(0)        ESTOY SACANDO EL PRIMER ELEMENTO DE LA FILA GENERAL Y LO ESTOY GUARDANDO EN X
+		#filanueva.insertar(x)
+		
+		#Algo mas legante
+		filanueva.insertar(self.fila.pop(0))  #ESTOY METENIENDO EL QUE SAQUÉ DENTRO DE LA FILA NUEVA
+                                                      # Y LLAMANDO AL METODO !! 
         	
-#mensaje para mi, yo estoy metiendo un objeto en abrircajanueva, puedo usar cualquier mètodo de ka fila preferencial #para hacerle cosas !! usas pop y todo esoooo      
+#mensaje para mi, yo estoy metiendo un objeto en abrircajanueva, puedo usar cualquier mètodo de ka fila preferencial #para hacerle cosas !! usas pop y todo esoooo.  FALTA ACOMODAR LO DE ENFILA !!!    
     
     
     
