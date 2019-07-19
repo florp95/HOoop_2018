@@ -7,8 +7,8 @@ class Fila(object):
         self.fila = []
 
 class FilaPreferencial(Fila):
-    """Clase de la fila de los clientes preferenciales"""        
-
+    """Clase de la fila de los clientes preferenciales"""   
+    
     def insertar(self, cliente):
         """Inserta un nuevo cliente en la fila preferencial"""
         self.enfila+=1
@@ -19,9 +19,12 @@ class FilaPreferencial(Fila):
         self.enfila-=1
         self.fila.pop(0)
     
-    def abrircajanueva(self,maxenfila,filanueva):
+    def abrircajanueva(self, filanueva,maxenfila=10):
         """Si maxenfila es menor que la cantidad de clientes actualmente en espera, abro nueva caja"""
-        pass
+        
+        if self.enfila>maxenfila:
+        	
+#mensaje para mi, yo estoy metiendo un objeto en abrircajanueva, puedo usar cualquier mètodo de ka fila preferencial #para hacerle cosas !! usas pop y todo esoooo      
     
     
     
